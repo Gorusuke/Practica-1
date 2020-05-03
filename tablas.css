@@ -1,0 +1,52 @@
+table, td, th{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 400px;
+}
+
+td, th{
+    padding: 10px;
+}
+
+th{
+    background: rgba(10, 10, 156, 0.75);
+    color: white;
+}
+
+td{
+    font-weight: 300;
+}
+
+tr:hover{
+    background: rgb(200, 200, 200);
+}
+
+@keyframes Gorusuke{
+    9.1%{background: #13736d; transform: rotate(32.7deg);}
+    18.2%{background: #005b54; transform: rotate(65.4deg);}
+    27.3%{background:#004b43; transform: rotate(98.1deg);}
+    36.4%{background:#003b32; transform: rotate(130.8deg);}
+    45.5%{background:#002a20; transform: rotate(163.5deg);}
+    54.6%{background:#001a0f; transform: rotate(196.2deg);}
+    63.7%{background:#002a20; transform: rotate(228.9deg);}
+    72.8%{background:#003b32; transform: rotate(261.6deg);}
+    81.9%{background:#004b43; transform: rotate(294.3deg);}
+    91%{background:#005b54; transform: rotate(327deg);}
+    100%{background: #13736d; transform: rotate(360deg);}
+}
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: #13736d;
+    /* animation-name: Gorusuke;
+    animation-duration: 20s;
+    animation-iteration-count: infinite; */
+    border-radius: 20px;
+    margin: 200px;
+    animation: Gorusuke 5s ease infinite;
+}
